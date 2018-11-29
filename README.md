@@ -1,2 +1,3 @@
-# old-uni-code
-Code I've dug out of various places to archive some of the code I wrote during my Software Engineering university degree at Heriot-Watt
+# old-uni-work
+
+Old code, coursework submissions etc. from my Software Engineering university at Heriot-Watt - mostly sentimental
