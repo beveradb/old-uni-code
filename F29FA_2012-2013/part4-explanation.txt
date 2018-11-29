@@ -1,0 +1,27 @@
+Explanation of code:
+
+	Following on from the code already written for part 3, I added an operator definition to handle "diagonalize".
+	This section of code is well commented, but here is a simplified description of its functionality:
+	• Process input into objects of relevant types (ArraySet etc)
+	• Check (using previously defined is-function method) that inputs E1 and E2 are functions, and E3 evaluates to an integer
+	• For each element in E1 (table column):
+	• Check that the value (table row) of this element in E1 is a function
+	• Get the element in the row at the same column index we're at, apply the mutator function E2 to it and store this value
+	• If the output from the mutator function was undefined, set stored value to the default (E3)
+	• Create a pair from our current index to the stored value, and add this pair to a new set, forming a function
+	• After looping through all elements of E1, return this newly created function.
+
+Additional questions:
+
+	• Under what conditions does @diagonalize(E1,E2,E3) return a function F such that F does not belong to the value of E1?
+
+		• E2( E1(i)(i) ) is defined for all values of E1(i)(i) and has a value not equal to E1(i)(i) 
+		• Either E3 is not in the set S OR E1(i)(i) is defined for every value of i
+		
+	• Why is this the same as the method of diagonalization introduced by Cantor? Is it only the same under some conditions? If so, what conditions?
+
+		This implementation is the same as Cantor's diagonalization as long as the above conditions are met, because:  
+		• Function E1 is a 2D array;
+		• The diagonal of this array is mutated by function E2;
+		• E1 is assumed to be an enumeration function for some set S, so the resulting function must also be in E1;
+		• This is a contradiction, since E1(k)(k) must be the same as F(k), but by definition of F cannot be.

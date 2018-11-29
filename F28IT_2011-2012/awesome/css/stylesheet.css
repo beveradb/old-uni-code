@@ -1,0 +1,176 @@
+/**
+ *	e-Coms Styles
+ *	
+ *	This stylesheet was created through the cooperation of Andrew Beveridge, Joyce Echevin, and Hans-Nikolai Viessmann
+ *	This is for a mock site as part of our coursework assignment for Internet & Communication (F28IT).
+ *	
+ *	This stylesheet utilizes the concept of liquid design, the layout of the website should 'fit' into both the browser
+ *	and into the viewable space on the users screen.
+ *
+ *	@project	e-Coms Store
+ *	@version	1
+ *	@revision	3
+ *	@package	xhtml-css
+ *	@author		Andrew Beveridge, Joyce Echevin, Hans-Nikolai Viessmann
+ *	@cssdoc		version 1.0-pre rev. 2
+ *
+*/
+
+
+/* Initilizers */
+
+	/* Fonts in the form of CSS3 stylesheets from Google Font API */
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+@import url(http://fonts.googleapis.com/css?family=Federo);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%; /* need this to use up ALL avalible space within browser window */
+	height: 100%; /* need this to use up ALL avalible space within browser window */
+	font-family: 'Bitter', serif;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAqElEQVRIibXU2w3AIAgFUGQl52And2IOd+pHmz4MVpSrP2pijonCTSJC7qGqpRTnYc45+2kRmaCJaJPO57RD53sF1/m9werc7IF6SwN1g0bpNg3Ru3Rc/6OD+oCO6GN6WU/+uKm1+i9Q1UREm3Seysmpl2GaTGG/fn3jDv2pELj+KT6s3tY1UDdaBqXb3QjRu40e1/8yJKgP4imij5NvWXeF6pruotf0A8wGX6GpJVWdAAAAAElFTkSuQmCC); /* comprises #4d4d4d and #808080 */
+}
+
+p {
+	padding-bottom: 0.5em;
+}
+
+/*#### GENERAL PAGE LAYOUT ####*/
+
+	/* Container */
+
+#container {
+	margin: auto !important; /* centering */
+	padding: 0 0.5em;
+	width: 50em;
+	background-color: #CCCCCC;
+}
+
+#nav {
+	position: relative;
+	width: 50em;
+	height: 2.6em;
+}
+	/* Header */
+
+#header {
+	border-bottom: dashed #808080;
+}
+
+#header  span {
+	font-family: 'Federo', sans-serif;
+	font-size: 3em;
+}
+
+	/* Menu */
+
+#menu {
+	height: 100%;
+	border-bottom: dashed #808080;
+}
+
+#menu li {
+	text-decoration: none;
+	display: inline;
+}
+
+#menu a:link {
+	color: #808080;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 0 0.1em;
+}
+
+#menu a:hover {
+	color: #808080;
+	border-bottom: solid;
+	border-top: solid;
+}
+
+#menu a:visited {
+	color: #808080;
+	border-bottom: solid;
+	border-top: solid;
+}
+
+	/* Body */
+
+#body {
+	padding-top: 0.5em; 
+}
+
+.motto {
+}
+
+	/* Footer */
+
+#footer {
+	margin: auto; /* centering */
+	padding: 0.5em;
+	border-top: dashed #808080;
+	background-color: #CCCCCC;
+	width: 50em;
+}
+
+#footer p {
+	text-align: center;
+	padding: 0 !important; /* Bypasses the initilizer */ 
+}
+
+
+#dialog-form { display: none; font-size: 62.5%; }
+label, input { display:block; }
+input.text, textarea, select { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#item > option {
+	color: #000;
+}
+
+#cartbutton {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+
+#cartpopup {
+	width: 200px;
+	height: 100px;
+	display: none;
+}
+
+#address {
+	height: 100px;
+}
+
+#productlist {
+	width: 500px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+div .product { 
+	width: 500px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+div .product > img { 
+	margin: 10px;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-khtml-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+
+div .price { 
+	width: 300px;
+	margin-left: 30px;
+}

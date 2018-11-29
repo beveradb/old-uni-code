@@ -1,0 +1,66 @@
+Name: Andrew Beveridge
+Email: vokera@andrewbeveridge.co.uk
+Address: test
+tesgh
+dfbd
+fbsdfbfb
+Purchased Item 8: Stuart Weitzman&rsquo;s &ldquo;Cinderella Slippers&rdquo;
+Purchase Price: $2000000
+Purchased Item 9: Stuart Weitzman&rsquo;s Rita Hayworth Heels
+Purchase Price: $3000000
+Total Price: $5000000
+
+
+Name: Andrew Beveridge
+Email: vokera@andrewbeveridge.co.uk
+Address: rfbwrnbwrg
+wrtbwrvwrt
+Purchased Item 0: Stuart Weitzman &ldquo;Retro Rose&rdquo; Pumps
+Purchase Price: $1000000
+Purchased Item 2: Stuart Weitzman &ldquo;Ruby Slippers&rdquo;
+Purchase Price: $1600000
+Total Price: $2600000
+
+
+Name: Andrew Beveridge
+Email: shoemailtest@andrewbeveridge.co.uk
+Address: 5 Drum Road,
+Kelty
+Fife
+KY4 0BB
+Purchased Item 0: Stuart Weitzman &ldquo;Retro Rose&rdquo; Pumps
+Purchase Price: $1000000
+Purchased Item 4: Slippers Worn by Indian Prince
+Purchase Price: $160000
+Purchased Item 5: Stuart Weitzman&rsquo;s &ldquo;Diamond Dream&rdquo; Stilettos
+Purchase Price: $500000
+Total Price: $1660000
+
+
+Name: Andrew Beveridge
+Email: shoemailtest@andrewbeveridge.co.uk
+Address: 5 Drum Road,
+Kelty
+Fife
+KY4 0BB
+Purchased Item 0: Stuart Weitzman &ldquo;Retro Rose&rdquo; Pumps
+Purchase Price: $1000000
+Purchased Item 4: Slippers Worn by Indian Prince
+Purchase Price: $160000
+Purchased Item 5: Stuart Weitzman&rsquo;s &ldquo;Diamond Dream&rdquo; Stilettos
+Purchase Price: $500000
+Total Price: $1660000
+
+
+Name: Andrew Beveridge
+Email: ecomsshoes@techfixuk.com
+Address: 5 Drum Road
+Kelty
+Ky4 0DQ
+Purchased Item 2: Stuart Weitzman &ldquo;Ruby Slippers&rdquo;
+Purchase Price: $1600000
+Purchased Item 3: Diamond-Encrusted Custom Nikes
+Purchase Price: $50000
+Total Price: $1650000
+
+

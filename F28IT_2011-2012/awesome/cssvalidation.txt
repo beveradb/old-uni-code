@@ -1,0 +1,10 @@
+"We are aware of the validation errors; we've 
+written the invalid CSS intentionally. 
+We take a much more pragmatic approach than saying "all CSS must validate." 
+In the real world, that just doesn't work if you want to actually take advantage 
+of the flexibility and functionality that CSS provides. 
+
+Validating is great, and something you should do, but a spec is only as good 
+as its actual usability based on browser support."
+
+-jQuery UI Core Developer, on the subject of CSS validation.

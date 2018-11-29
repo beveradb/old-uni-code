@@ -1,0 +1,81 @@
+Course Code: F2M1-SOE
+Course Title: Software Engineering
+School: Mathematical & Computer Sciences
+Award: MEng, BSc (hons), BSc (Ord)
+Accredited by: BCS & IEE
+UCAS Code: G601 (5 yrs); G602 (4 yrs)
+Date of Production/Revision: 30 March 2010/Version 7
+
+Year 1: Total 548, Average 68.5% = 2:1
+A / 91% - F27SA_2010-2011 - Software Development 1				Gregory John Michaelson <G.Michaelson@hw.ac.uk>
+A / 81% - F27SB_2010-2011 - Software Development 2				Brian Palmer <B.V.W.Palmer@hw.ac.uk>
+A / 75% - F27PX_2010-2011 - Praxis								Brian Palmer <B.V.W.Palmer@hw.ac.uk>
+A / 74% - F27IS_2010-2011 - Interactive Systems					Judy Robertson <Judy.Robertson@hw.ac.uk>
+B / 63% - F27EM_2010-2011 - Emerging Technologies				Robert John Pooley <R.J.Pooley@hw.ac.uk>
+C / 59% - F17SC_2010-2011 - Discrete Mathematics				Anatoly Konechny <a.konechny@hw.ac.uk>
+C / 54% - F27CS_2010-2011 - Introduction to Computer Systems	Pierluigi Frisco <pier@macs.hw.ac.uk>
+C / 51% - F27DB_2010-2011 - Introduction to Database Systems	Helen Hastie <h.hastie@hw.ac.uk>
+
+Year 2: Total 508, Average 63.5% = 2:1
+A / 85% - F28DM_2011-2012 - Database Management Systems			Monica Farrow <M.Farrow@hw.ac.uk>
+A / 80% - F28PL_2011-2012 - Programming Languages				Gregory John Michaelson <G.Michaelson@hw.ac.uk>
+A / 71% - F28IN_2011-2012 - Interaction Design					Sandy Louchart <s.louchart@hw.ac.uk>
+B / 62% - F17SP_2011-2012 - Foundation Mathematics A			John Carr <J.Carr@hw.ac.uk>
+B / 60% - F28DA_2011-2012 - Data Structures and Algorithms		Lilia Georgieva <L.Georgieva@hw.ac.uk>, Phil Trinder <P.W.Trinder@hw.ac.uk>
+C / 59% - F28SD_2011-2012 - Software Design						Andrew Ireland <A.Ireland@hw.ac.uk>
+C / 51% - F28IT_2011-2012 - Internet and Communications			Peter John Beaufoy King <P.J.B.King@hw.ac.uk>, Hamish Taylor <H.Taylor@hw.ac.uk>
+D / 40% - F17SQ_2011-2012 - Foundations Mathematics B			A Prince <A.R.Prince@hw.ac.uk>
+
+Year 3: Total 532, Average 66.5% = 2:1
+A / 78% - F29SO_2012-2013 - Software Engineering				Monica Farrow <M.Farrow@hw.ac.uk>
+A / 78% - F29PD_2012-2013 - Professional Development			Sandy Louchart <s.louchart@hw.ac.uk>
+A / 76% - F29GR_2012-2013 - Computer Graphics					Mike Chantler <M.J.Chantler@hw.ac.uk>
+A / 75% - F29OC_2012-2013 - Operating Systems & Concurrency		Sven-Bodo Scholz <S.Scholz@hw.ac.uk>
+C / 64% - F29FA_2012-2013 - Foundations 1						Fairouz Kamareddine <fairouz@cedar-forest.org>
+C / 64% - F29AI_2012-2013 - Artificial Intelligence				Ruth Aylett <r.s.aylett@hw.ac.uk>, Patricia Vargas <p.a.vargas@hw.ac.uk>
+C / 51% - F28FS_2012-2013 - Formal Specification				Murdoch Gabbay <M.Gabbay@hw.ac.uk>
+D / 46% - F29FB_2012-2013 - Foundations 2						Joe Wells <Joe.Wells@hw.ac.uk>
+
+Year 4: Total 510, Average 63.7%, 2:1
+A - F20PA_2013-2014 - Project: Research Methods					Peter John Beaufoy King <P.J.B.King@hw.ac.uk>
+A - F20PB_2013-2014 - Project: Design & Implementation			Peter John Beaufoy King <P.J.B.King@hw.ac.uk>
+A - F20PC_2013-2014 - Project: Testing & Presentation			Peter John Beaufoy King <P.J.B.King@hw.ac.uk>
+A - F21DL_2013-2014 - Data Mining & Machine Learning 			David Corne <d.w.corne@hw.ac.uk>
+B - F21RO_2013-2014 - Robotics & Automation						Patricia Vargas <p.a.vargas@hw.ac.uk>
+B - F21CN_2013-2014 - Computer Network Security					Hamish Taylor <H.Taylor@hw.ac.uk>, Hans-Wolfgang Loidl <H.W.Loidl@hw.ac.uk>
+D - F21DP_2013-2014 - Distributed and Parallel Technologies		Hans-Wolfgang Loidl <H.W.Loidl@hw.ac.uk>
+D - B81PI_2013-2014 - Professional and Industrial Studies		Jill Gunn <J.P.Gunn@hw.ac.uk>
+
+Year 5: Total 580, Average 72.5, 1st
+A - F21IA_2014-2015 - Industrial Placement 1					Sven-Bodo Scholz <S.Scholz@hw.ac.uk>
+A - F21IB_2014-2015 - Industrial Placement 2					Sven-Bodo Scholz <S.Scholz@hw.ac.uk>
+A - F21IC_2014-2015 - Industrial Placement Monthly Reports		Sven-Bodo Scholz <S.Scholz@hw.ac.uk>
+A - F21ID_2014-2015 - Industrial Placement Final Report			Sven-Bodo Scholz <S.Scholz@hw.ac.uk>
+A - F21DG_2014-2015 - Design & Code Group Project				Alasdair Gray <A.J.G.Gray@hw.ac.uk>	
+A - F21SM_2014-2015 - Software Engineering Master Class			Fiona McNeill <F.McNeill@hw.ac.uk>
+A - F21NA_2014-2015 - Network Applications						Hamish Taylor <H.Taylor@hw.ac.uk>
+C - F21BD_2014-2015 - Big Data Management						Alasdair Gray <A.J.G.Gray@hw.ac.uk>, Albert Burger <albert.burger@me.com>
+
+Overall Average: 67% (Distinction)
+
+
+Optional courses I didn't take:
+F20CL_2013-2014 - Computing in the Classroom
+F21DS_2013-2014 - Distributed Systems Programming
+F21IF_2013-2014 - Information Systems Methodologies
+F21MA_2013-2014 - 3D Modelling and Animation
+F21MC_2013-2014 - Mobile Communications & Programming
+F21RS_2013-2014 - Rigorous Methods for Software Eng
+F21BC_2013-2014 - Biologically Inspired Computation
+F21EC_2013-2014 - E-Commerce Technology
+F21GP_2013-2014 - Computer Games Programming
+F21NA_2013-2014 - Network Applications
+F21VE_2013-2014 - Virtual Environments
+F21WI_2013-2014 - Web Intelligence
+F21AD_2014-2015 - Advanced Interaction Design
+F21BC_2014-2015 - Biologically Inspired Computation
+F21DP_2014-2015 - Distributed and Parallel Technologies
+F21EC_2014-2015 - E-Commerce Technology
+F21GP_2014-2015 - Computer Games Programming
+F21VE_2014-2015 - Virtual Environments
+F21WI_2014-2015 - Web Intelligence

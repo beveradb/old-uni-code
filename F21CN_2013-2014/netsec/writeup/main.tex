@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Latex-Templates, Generic
+%% Copyright 2012 Hans-Nikolai Viessmann
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Hans-Nikolai Viessmann.
+%
+% This work consists of the files main.tex, appendix.tex, assignment.tex, title.tex,
+% toc.tex, and listings.tex and uses freely available packages created for TeX/LaTex
+% by other individuals
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	EXPLICIT DOCUMENT DECLARATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[pdftex,			% use pdftex to compile tex code
+				12pt,			% base font size
+				a4paper,		% paper size/type
+				twoside,		% book style margins (doublepage)
+				english,		% global language for document
+				titlepage		% correct formatting for titlepage
+			]{article}			% document is type article
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	PACKAGE AND ADDON DECLARATION(S)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pdftex]{graphicx}	% better formating of images within pdf document
+\usepackage{titlepic}			% title page image formating
+\usepackage[utf8]{inputenc}		% all input is encoded as UTF-8
+\usepackage[%textwidth=16.5cm,
+			%outer=1.5cm,
+			%textheight=45\baselineskip,
+			%headheight=\baselineskip,
+			margin=1in,			% width of margin
+			bindingoffset=.2in,	% width of binding margin
+			showframe=false,	% removes the frame (DEBUG ONLY)
+			a4paper,			% set page type
+			pdftex				% formating for pdf
+			]{geometry} 		% control the geometry of 'boxes'
+%\usepackage{mathtools}			% more control over mathematical structures
+%\usepackage{tikz}				% Latex generated graphics
+\usepackage{color}				% color
+\usepackage[usenames,dvipsnames]{xcolor}% xcolor
+\usepackage{listings}			% source code listing
+\usepackage{caption}			% caption control
+\usepackage[titletoc]{appendix}	% appendix control and addition to TOC
+\usepackage{pdfpages}			% add pages from a pdf document
+\usepackage{float}				% correctly 'float' figures
+\usepackage{hyperref}			% pdf bookmarks and hyperrefs
+%\usepackage{inconsolata}		% font Inconsolata
+
+\pagenumbering{roman}			% force page number Roman
+%\raggedbottom					% force paragraphs not to align bottom
+								% Decrease vertical spacing between figures
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+%\DeclareMathSizes{11}{11}{11}{9}% Change size of mathematical formulae and symbols
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	COMMAND DEFINITION(S)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 						
+%\renewcommand*\thesection{\Alph{section}} % change section numbering to Alphabet
+% Unnumbered subsection for the nice subsection titles and entry into TOC + pdfBookmark	
+\providecommand*\phantomsection{}	% if hyperref package missing, don't error out
+
+\providecommand*\usubsection[1]{	% unnembered subection command with 1 input
+	\subsection*{#1}				% original subsection without numbering and no TOC
+	\phantomsection					% for pdfBookmarks links to point correctly (only
+									% nessicary when dealing with unnumbered sections)
+	\addcontentsline{toc}{subsection}{#1}} % add entry to TOC using title
+
+\providecommand*\usubsubsection[1]{	% unnembered subection command with 1 input
+	\subsubsection*{#1}				% original subsection without numbering and no TOC
+	\phantomsection					% for pdfBookmarks links to point correctly (only
+									% nessicary when dealing with unnumbered sections)
+	\addcontentsline{toc}{subsubsection}{#1}} % add entry to TOC using title		
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% Caption formating for code
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}
+	{\colorbox{gray}{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\input{listings.tex}								% listing styles etc.
+
+% PDF bookmarks and colored links
+%
+% (to enable hyperlinks and bookmarks, comment out ``draft'' line;
+%  to disable hyperlinks and bookmarks, uncomment ``draft'' line)
+\hypersetup{bookmarksnumbered=true,					% add numbering to bookmarks
+			breaklinks=true,						% allow wrapping of links
+			colorlinks=true,						% colorize links
+			unicode=true,							% encode bookmarks using UTF-8
+            linkcolor=black,urlcolor=black,			% color for links and urls
+            anchorcolor=black,citecolor=black,		% color for anchors and citations
+            pdftitle={},	% title for pdf info
+			pdfauthor={},					% author for pdf info
+			hypertexnames=false						% FIX issue regarding page number
+													% reset (non-unique name error)
+			%draft									% draft mode
+            }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	DOCUMENT START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\newgeometry{margin=1in}
+\input{title.tex}
+\restoregeometry
+\input{toc.tex}
+\input{assignment.tex}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
