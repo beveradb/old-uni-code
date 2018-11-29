@@ -1,0 +1,177 @@
+; Turing machines for use with simulator here: http://morphett.info/turing/turing.html
+; Each line should contain one tuple of the form:
+; <current state> <current symbol> <new symbol> <direction> <new state>
+
+; You can use any number or word for <current state> and <new state>, eg 0, a, state1. State labels are case-sensitive.
+; halt is the halting state. The machine starts in state 0.
+
+; You can use any character for <current symbol> and <new symbol>, or '_' to represent blank (space). Symbols are case-sensitive.
+; <direction> should be 'l', 'r' or '*', denoting 'move left', 'move right' or 'do not move', respectively.
+; '*' can be used in <current symbol> or <current state> to match any character or state.
+; '*' can be used in <new symbol> or <new state> to mean 'no change'.
+
+
+; Increment - add 1 to a number
+; Assumes input of single number in format 111 where _ is blank tape at either side
+
+0 _ 1 l 1
+0 1 1 r 0
+1 1 1 l 1
+1 _ _ r halt
+
+; Action Table:
+; Madd1(q0,∧) = (q1,1,L)
+; Madd1(q0,1) = (q0,1,R)
+; Madd1(q1,∧) = (q2,∧,R)
+; Madd1(q1,1) = (q1,1,L)
+
+
+; Even - leave head on 1 or _ to represent true or false if input is even or odd
+; Assumes input of single number in format 111 where _ is blank tape at either side
+
+0 1 1 r 1
+0 _ _ l 0p
+1 1 1 r 0
+1 _ _ l 1p
+0p 1 _ l 0p
+0p _ _ r 0pp
+1p 1 _ l 1p
+1p _ _ r 1pp
+0pp _ 1 * halt
+1pp _ _ * halt
+
+
+; Divisible by 3 (matthew) - leave head on 1 or _ to represent true or false
+; Assumes input of single number in format 111 where _ is blank tape at either side
+
+0 _ _ * halt
+0 1 _ r 1
+1 1 _ r 2
+1 _ _ * halt
+2 1 _ r 3
+2 _ _ * halt
+3 1 _ r 1
+3 _ 1 * halt
+
+
+; Divisible by 3 (joe) - leave head on 1 or _ to represent true or false
+; Assumes input of single number in format 111 where _ is blank tape at either side
+
+0 1 _ r 1
+0 _ 1 * halt
+1 1 _ r 2
+1 _ _ * halt
+2 1 _ r 0
+2 _ _ * halt
+
+
+; Copy - take number and copy it to further on in the tape with one blank in between
+; Assumes input of single number in format 111 where _ is blank tape at either side
+; Leaves head between copied number and original - see joe's tutorial 4
+
+0 _ _ * halt
+0 1 _ r 1
+1 1 1 r 1
+1 _ _ r 2
+2 1 1 r 2
+2 _ 1 l 3
+3 1 1 l 3
+3 _ _ l 4
+4 1 1 l 4
+4 _ 1 r 0
+
+
+; Copy - take number and copy it to further on in the tape with one blank in between
+; Assumes input of single number in format 111 where _ is blank tape at either side
+; Leaves head in original location at start of first number - see joe's tutorial 4
+
+0 _ _ l 5
+0 1 _ r 1
+1 1 1 r 1
+1 _ _ r 2
+2 1 1 r 2
+2 _ 1 l 3
+3 1 1 l 3
+3 _ _ l 4
+4 1 1 l 4
+4 _ 1 r 0
+5 1 1 l 5
+5 _ _ r halt
+
+
+; Double - take number and double it
+; Assumes input of single number in format 111 where _ is blank tape at either side
+; Leaves head in original location at start of first number - see joe's tutorial 4
+
+0 _ 1 l 5
+0 1 _ r 1
+1 1 1 r 1
+1 _ _ r 2
+2 1 1 r 2
+2 _ 1 l 3
+3 1 1 l 3
+3 _ _ l 4
+4 1 1 l 4
+4 _ 1 r 0
+5 1 1 l 5
+5 _ _ r 6
+6 1 _ r halt
+
+
+; Take two numbers separated by a single blank and copy the first to just after the second
+; Assumes input of two numbers in format 111_11 where _ is blank tape at either side
+; Leaves head in original location at start of first number - see joe's tutorial 4
+
+; Normal copy TM
+0 _   _ l 7
+0 1   _ r 1
+1 1   1 r 1
+1 _   _ r 2
+2 1   1 r 2
+; Instead of writing directly on the right as in normal copy, skip one to new state
+2 _   _ r 5
+3 1   1 l 3
+3 _   _ l 4
+4 1   1 l 4
+4 _   1 r 0
+; Additional states added to copy to place extra space on the right before writing copied numbers
+5 _   1 l 6
+5 1   1 r 5
+6 _   _ l 3
+6 1   1 l 6
+; Return head to start or first number
+7 1   1 l 7
+7 _   _ r halt
+
+
+
+
+; Even Copy - take number and copy it to further on in the tape with one blank in between
+; More efficient than normal Copy but only works for Even numbers
+; Assumes input of single number in format 111 where _ is blank tape at either side
+; Leaves head in original location at start of first number - see joe's tutorial 4
+
+0 _ _ * halt
+0 1 _ r 1
+
+1 1 _ r 2
+
+2 1 1 r 2
+2 _ _ r 3
+
+3 1 1 r 3
+3 _ 1 r 4
+
+4 _ 1 l 5
+
+5 1 1 l 5
+5 _ _ l 6
+
+6 1 1 l 6
+6 _ 1 l 7
+
+7 _ 1 r 8
+
+8 1 1 r 0
+
+
